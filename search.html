@@ -58,11 +58,11 @@
     ];
 
     function search() {
-        let duckType = document.getElementById("type").value.toLowerCase(); // Convert input value to lowercase
+        let duckType = document.getElementById("type").value.toLowerCase(); 
         let table = document.getElementById("searchResults");
         table.innerHTML = "";
         for(let duck of ducks) {
-            if(!duckType || duck.type.toLowerCase() == duckType) { // Convert duck type to lowercase for comparison
+            if(!duckType || duck.type.toLowerCase() == duckType) { 
                 let row = document.createElement("tr");
                 let cell1 = document.createElement("td");
                 
